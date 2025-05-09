@@ -1,19 +1,5 @@
 #!/usr/bin/env node
-/**
- * clean-node-modules.js
- * Recursively operate on all node_modules folders under a given directory.
- *
- * Usage:
- *   chmod +x clean-node-modules.js
- *   ./clean-node-modules.js <action> [path]
- *
- * Actions:
- *   size   - Display total size of each node_modules folder
- *   count  - Display how many node_modules folders and how many subfolders each contains
- *   delete - Delete all node_modules folders (default if no action provided)
- *
- * If [path] is omitted, defaults to current directory.
- */
+
 
 import { readdir, stat, rm } from 'fs/promises';
 import { join } from 'path';
